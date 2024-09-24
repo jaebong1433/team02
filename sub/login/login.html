@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>아르고스케어 알림장</title>
+
+   <!-- FAVICON -->
+   <link rel="icon" type="image/svg+xml" href="../../img/common/favicon.svg">
+
+   <!-- FONT -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="../../css/reset.css">
+   <link rel="stylesheet" href="../../css/style.css">
+   <!-- js -->
+   <link rel="stylesheet" href="../../js/main.js">
+</head>
+
+<body>
+   <div id="wrap">
+      <header id="header">
+         <ul class="status s_none disable">
+            <li class="title">
+               내 정보
+            </li>
+         </ul>
+         <ul class="status s_arrow disable">
+            <li class="arrow"></li>
+            <li class="title">
+               내 정보
+            </li>
+         </ul>
+      </header>
+      <section id="login">
+         <div class="login">
+            <img src="../../img/main/logo.png" alt="아르고스케어로고">
+            <p>아르고스케어 알림장</p>
+            <h2>로그인</h2>
+            <div class="text-box">
+               <input type="text" placeholder="시설을 선택하세요">
+            </div>
+            <div class="text-box">
+               <input type="text" placeholder="이름을 입력하세요">
+            </div>
+            <div class="text-box">
+               <input type="text" placeholder="비밀번호 입력">
+            </div>
+            <label class="checkbox-label">
+               <input type="checkbox" id="checkbox1">
+               <span class="custom-checkbox"></span>
+               자동 로그인
+            </label>
+            <div class="button-container">
+               <button class="login-button" onclick="location.href='../main/main.html'">로그인하기</button>
+            </div>
+         </div>
+
+         <!-- 모달창 -->
+         <div class="container">
+            <div class="header">
+               <span class="title">시설 검색</span>
+               <span class="close"><img src="../../img/main/close.png" alt=""></span>
+            </div>
+            <div class="search-bar">
+               <input type="text" placeholder="시설명을 입력해주세요">
+            </div>
+            <div class="facility-list">
+               <div class="facility-item">
+                  <div class="facility-info">
+                     <span class="facility-name">아르고스 주간보호센터</span>
+                     <span class="facility-address">부산광역시 부산진구 중앙대로 708</span>
+                  </div>
+                  <button class="select-button">선택</button>
+               </div>
+
+               <div class="facility-item">
+                  <div class="facility-info">
+                     <span class="facility-name">아르고스 주간보호센터</span>
+                     <span class="facility-address">부산광역시 부산진구 중앙대로 708</span>
+                  </div>
+                  <button class="select-button">선택</button>
+               </div>
+               <div class="facility-item">
+                  <div class="facility-info">
+                     <span class="facility-name">아르고스 주간보호센터</span>
+                     <span class="facility-address">부산광역시 부산진구 중앙대로 708</span>
+                  </div>
+                  <button class="select-button">선택</button>
+               </div>
+               <div class="facility-item">
+                  <div class="facility-info">
+                     <span class="facility-name">아르고스 주간보호센터</span>
+                     <span class="facility-address">부산광역시 부산진구 중앙대로 708</span>
+                  </div>
+                  <button class="select-button">선택</button>
+               </div>
+               <div class="facility-item">
+                  <div class="facility-info">
+                     <span class="facility-name">아르고스 주간보호센터</span>
+                     <span class="facility-address">부산광역시 부산진구 중앙대로 708</span>
+                  </div>
+                  <button class="select-button">선택</button>
+               </div>
+            </div>
+            <button class="complete-button">완료</button>
+         </div>
+      </section>
+   </div>
+
+
+</body>
+
+</html>

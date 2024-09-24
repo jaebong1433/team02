@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스케어 스플래시</title>
+
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="img/common/favicon.svg">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- js -->
+  <link rel="stylesheet" href="js/main.js">
+</head>
+
+<body>
+  <div id="wrap" class="none">
+
+    <div id="splash">
+      <a href="sub/login/login.html">
+        <div class="splash_txt">
+          <p>아르고스케어</p>
+          <h1>주야간보호센터
+            <span>보호자용 알림장</span>
+          </h1>
+        </div>
+        <div class="splash_img">
+          <img src="img/main/ico_splash01.png" alt="아이콘" class="img01">
+          <img src="img/main/ico_splash02.png" alt="아이콘" class="img02">
+        </div>
+      </a>
+      <p class="copy">Copyight©️ SCT 2023. AII Rights Reserved</p>
+    </div>
+
+  </div>
+
+
+  <script>
+    setTimeout('move_page()', 2000); //2초후에 move_page함수실행
+    function move_page() {
+      location.href = "https://argosassignmentbook.vercel.app/"  // 페이지 이동
+    }
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스케어 알림장</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="../../img/common/favicon.svg">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/sub.js"></script>
+  <script src="../../js/history.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <ul class="status s_none disable">
+        <li class="title">
+          내 정보
+        </li>
+      </ul>
+      <ul class="status s_arrow ">
+        <li class="arrow"><a href="../main/main.html"></a></li>
+        <li class="title">
+          입금내역
+        </li>
+      </ul>
+    </header>
+    <main id="dep_wrap" class="status_block tab_fixed ">
+      <div class="dep_tab">
+        <ul>
+          <li>
+            <a href="claimDetails.html">청구내역</a>
+          </li>
+          <li>
+            <a href="depositDetails.html">입금내역</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inner">
+        <div class="dep_box">
+          <div class="dep_tit">
+            <img src="../../img/common/ico_prev.svg" alt="ico_prev" class="dep_prev">
+            <h3 class="dep_year">2024년</h3>
+            <img src="../../img/common/ico_next.svg" alt="ico_next" class="dep_next">
+          </div>
+          <span class="dep_total">총 합계</span>
+          <p class="dep_price"><b>1,789,520</b>원</p>
+          <a href="#" class="dep_search"><img src="../../img/sub/ico_calendarClock.svg" alt="ico_calendarClock"> 기간별
+            입금금액
+            조회하기</a>
+        </div>
+      </div>
+
+      <div class="inner_two">
+        <ul class="dep_txtbox one">
+          <li>
+            <h3><span>2024년</span> 08월 청구요금</h3>
+          </li>
+          <li>
+            <b>629,880<span class="cla_price">원</span></b>
+            <img src="../../img/common/ico_down.svg" alt="ico_down" class="dep_cla_down">
+          </li>
+          <li>
+            <ul class="dep_depth2">
+              <li>
+                <i></i>
+                <ul>
+                  <li><span>입금방법</span><b>무통장</b></li>
+                  <li><span>입금자명</span><b>이재봉</b></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="dep_txtbox two">
+          <li>
+            <h3><span>2024년</span> 07월 청구요금</h3>
+          </li>
+          <li>
+            <b>499,180<span class="cla_price">원</span></b>
+            <img src="../../img/common/ico_down.svg" alt="ico_down" class="dep_cla_down">
+          </li>
+          <li>
+            <ul class="dep_depth2">
+              <li>
+                <i></i>
+                <ul>
+                  <li><span>입금방법</span><b>현금</b></li>
+                  <li><span>입금자명</span><b>이재봉</b></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="dep_txtbox three">
+          <li>
+            <h3><span>2024년</span> 06월 청구요금</h3>
+          </li>
+          <li>
+            <b>294,200<span class="cla_price">원</span></b>
+            <img src="../../img/common/ico_down.svg" alt="ico_down" class="dep_cla_down">
+          </li>
+          <li>
+            <ul class="dep_depth2">
+              <li>
+                <i></i>
+                <ul>
+                  <li><span>입금방법</span><b>카드</b></li>
+                  <li><span>입금자명</span><b>이재봉</b></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="dep_txtbox four">
+          <li>
+            <h3><span>2024년</span> 05월 청구요금</h3>
+          </li>
+          <li>
+            <b>366,260<span class="cla_price">원</span></b>
+            <img src="../../img/common/ico_down.svg" alt="ico_down" class="dep_cla_down">
+          </li>
+          <li>
+            <ul class="dep_depth2">
+              <li>
+                <i></i>
+                <ul>
+                  <li><span>입금방법</span><b>기타</b></li>
+                  <li><span>입금자명</span><b>이재봉</b></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="dep_dim"></div>
+      <div class="dep_filter">
+        <ul>
+          <li>
+            <h4>기간 설정</h4><img src="../../img/common/ico_close.svg" alt="ico_close">
+          </li>
+          <li><span>조회기간</span></li>
+          <li><a href="#" class="active">3개월</a><a href="#">6개월</a><a href="#">1년</a><a href="#">직접입력</a></li>
+          <li><input type="text" value="2024.06.01">
+            <img src="../../img/sub/ico_wave.svg" alt="ico_wave"><input type="text" value="2024.09.01">
+          </li>
+          <li><a href="depositHistory.html">조회</a></li>
+        </ul>
+      </div>
+      <div class="dePop_dim"></div>
+      <div class="rec_popup">
+        <div class="popup-content">
+          <div class="date-picker">
+            <div class="date-column year-column">
+              <div class="year">2023</div>
+              <div class="year selected">2024</div>
+              <div class="year last">2025</div>
+            </div>
+            <div class="date-column month-column">
+              <div class="month">7</div>
+              <div class="month selected">8</div>
+              <div class="month">9</div>
+            </div>
+            <div class="date-column day-column">
+              <div class="day">27</div>
+              <div class="day selected">28</div>
+              <div class="day">29</div>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <button class="cancel">취소</button>
+            <button class="confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="navigation">
+      <ul class="app_nav">
+        <li>
+          <a href="../main/main.html">
+            <img src="../../img/common/ico_widgets.svg" alt="메뉴">
+            <p>
+              메뉴
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../notice/notice.html">
+            <img src="../../img/common/ico_newsmode.svg" alt="소식">
+            <p>
+              소식
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../alram/alarm.html">
+            <img src="../../img/common/ico_notification.svg" alt="알림">
+            <p>
+              알림
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../mypage/mypage.html">
+
+            <img src="../../img/common/ico_mypage.svg" alt="내 정보">
+            <p>
+              내 정보
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

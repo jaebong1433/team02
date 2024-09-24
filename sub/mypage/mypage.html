@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스케어 알림장</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="../../img/common/favicon.svg">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <ul class="status s_none">
+        <li class="title">
+          내 정보
+        </li>
+      </ul>
+      <ul class="status s_arrow disable">
+        <li class="arrow"><a href="#"></a></li>
+        <li class="title">
+          내 정보
+        </li>
+      </ul>
+    </header>
+    <main id="main" class="status_block">
+      <section class="mypage">
+        <div class="mypage_profile">
+          <div class="mypage_picture">
+            <div class="mypage_profile_img"></div>
+          </div>
+          <button type="button" class="camera">
+          </button>
+        </div>
+        <div class="mypage_profile_txt">
+          <p class="mypage_name">김복순님</p>
+          <p class="mypage_nok"><span>보호자</span> 김보호님</p>
+        </div>
+        <div class="mypage_call">
+          <p>보호자 연락처 <span class="nox_num">010-4321-9876</span></p>
+        </div>
+      </section>
+      <section class="mypage_setting">
+        <ul class="mypage_setting_list">
+          <li>
+            <a href="password.html">
+              <img src="../../img/mypage/ico_password.svg" alt="비밀번호 변경">
+              <p>비밀번호 변경</p>
+              <img class="more" src="../../img/common/ico_more.svg" alt="더보기">
+            </a>
+          </li>
+          <li><a href="version.html">
+              <img src="../../img/mypage/ico_version.svg" alt="버전 정보">
+              <p>버전 정보</p>
+              <img class="more" src="../../img/common/ico_more.svg" alt="더보기">
+            </a>
+          </li>
+          <li class="logout">
+            <a href='javascript:void(0)'>
+              <img src="../../img/mypage/ico_logout.svg" alt="로그아웃">
+              <p>로그아웃</p>
+              <img class="more" src="../../img/common/ico_more.svg" alt="더보기">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div id="navigation">
+      <ul class="app_nav">
+        <li>
+          <a href="../main/main.html">
+            <img src="../../img/common/ico_widgets.svg" alt="메뉴">
+            <p>
+              메뉴
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../notice/notice.html">
+            <img src="../../img/common/ico_newsmode.svg" alt="소식">
+            <p>
+              소식
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../alram/alarm.html">
+            <img src="../../img/common/ico_notification.svg" alt="알림">
+            <p>
+              알림
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="mypage.html">
+            <img src="../../img/common/ico_mypage_fill.svg" alt="내 정보">
+            <p>
+              내 정보
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn_overlay_dimmd">
+      <div class="dimmd"></div>
+      <div class="btn_overlay">
+        <div class="btn_title">
+          <h2>사진선택</h2>
+          <img src="../../img/common/ico_close.svg" alt="닫기" class="modal_close">
+        </div>
+        <ul class="btn_list">
+          <li>
+            <button type="button" class="taking_picture">촬영하기</button>
+          </li>
+          <li>
+            <button type="button" class="choosing_picture">사진고르기</button>
+          </li>
+        </ul>
+      </div>
+      <div class="overlay_modal modal_camera">
+        <div class="modal_txt">
+          <p>‘아르고스케어 모바일 알림장’이<br>
+            카메라에 접근하려 합니다<br>
+            허용하시겠습니까?</p>
+        </div>
+        <div class="btn_box">
+          <button class="btn btn_disable">허용안함</button>
+          <button class="btn access_camera">허용</button>
+        </div>
+      </div>
+      <div class="overlay_modal modal_gallery">
+        <div class="modal_txt">
+          <p>‘아르고스케어 모바일 알림장’이<br>
+            사진과 동영상에 접근하려 합니다<br>
+            허용하시겠습니까?</p>
+        </div>
+        <div class="btn_box">
+          <button class="btn btn_disable">허용안함</button>
+          <button class="btn access_gallery">허용</button>
+        </div>
+      </div>
+      <div class="overlay_modal modal_logout">
+        <div class="modal_txt">
+          <h2>로그아웃</h2>
+          <p>로그아웃 하시겠습니까?</p>
+        </div>
+        <div class="btn_box">
+          <button class="btn btn_disable">취소</button>
+          <button class="btn" onclick="location.href='https://argosassignmentbook.vercel.app/'">로그아웃</button>
+        </div>
+      </div>
+    </div>
+    <div class="phone_camera">
+      <img src="../../img/mypage/taking_picture.jpg" alt="카메라">
+    </div>
+    <div class="phone_gallery">
+      <img src="../../img/mypage/choosing_picture.jpg" alt="카메라">
+    </div>
+  </div>
+
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>

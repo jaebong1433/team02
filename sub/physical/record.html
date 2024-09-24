@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스케어 알림장</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="../../img/common/favicon.svg">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/date.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="bg_f1">
+    <header id="header">
+      <ul class="status s_none disable">
+        <li class="title">
+          내 정보
+        </li>
+      </ul>
+      <ul class="status s_arrow ">
+        <li class="arrow"><a href="../main/main.html"></a></li>
+        <li class="title">
+          급여제공기록
+        </li>
+      </ul>
+    </header>
+    <div id="rec_wrap">
+      <main class="inner status_block alink">
+        <div class="rec_box1">
+          <div class="rec_title">
+            <img src="../../img/common/ico_prev.svg" alt="ico_prev" id="prev">
+            <h3 id="date">2024년 8월 28일</h3>
+            <img src="../../img/common/ico_next.svg" alt="ico_next" id="next">
+          </div>
+          <ul>
+            <li>
+              <div><img src="../../img/sub/ico_alarm.svg" alt="ico_alarm"><span>이용시간</span></div>
+              <p>11:00 ~ 12:00 (60분)</p>
+            </li>
+            <li>
+              <div><img src="../../img/sub/ico_carCrash.svg" alt="ico_carCrash"><span>차량이용</span></div>
+              <p>12가 1234</p>
+            </li>
+            <li>
+              <a href="#">
+                <ul>
+                  <li class="dateSeclect"><img src="../../img/sub/ico_calendarClock.svg" alt="ico_calendarClock">날짜선택
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="rec_box2">
+          <ul>
+            <li><a href="physical.html">
+                <h4>신체활동지원</h4>
+                <img src="../../img/sub/ico_bath.svg" alt="ico_bath">
+              </a></li>
+            <li><a href="physical.html#communication">
+                <h4>인지관리 및 의사소통</h4>
+                <img src="../../img/sub/ico_ok.svg" alt="ico_ok">
+              </a></li>
+            <li><a href="physical.html#nursing">
+                <h4>건강 및 간호관리</h4>
+                <img src="../../img/sub/ico_pill.svg" alt="ico_pill">
+              </a></li>
+            <li><a href="physical.html#recovery">
+                <h4>기능회복훈련</h4>
+                <img src="../../img/sub/ico_shoe.svg" alt="ico_shoe">
+              </a></li>
+          </ul>
+        </div>
+      </main>
+      <div class="rec_dim"></div>
+      <div class="rec_popup">
+        <div class="popup-content">
+          <div class="date-picker">
+            <div class="date-column year-column">
+              <div class="year">2023</div>
+              <div class="year selected">2024</div>
+              <div class="year last">2025</div>
+            </div>
+            <div class="date-column month-column">
+              <div class="month">7</div>
+              <div class="month selected">8</div>
+              <div class="month">9</div>
+            </div>
+            <div class="date-column day-column">
+              <div class="day">27</div>
+              <div class="day selected">28</div>
+              <div class="day">29</div>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <button class="cancel">취소</button>
+            <button class="confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="navigation">
+      <ul class="app_nav">
+        <li>
+          <a href="../main/main.html">
+            <img src="../../img/common/ico_widgets.svg" alt="메뉴">
+            <p>
+              메뉴
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../notice/notice.html">
+            <img src="../../img/common/ico_newsmode.svg" alt="소식">
+            <p>
+              소식
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../alram/alarm.html">
+            <img src="../../img/common/ico_notification.svg" alt="알림">
+            <p>
+              알림
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../mypage/mypage.html">
+
+            <img src="../../img/common/ico_mypage.svg" alt="내 정보">
+            <p>
+              내 정보
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>

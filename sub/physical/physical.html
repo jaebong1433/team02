@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스케어 알림장</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="../../img/common/favicon.svg">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/date.js"></script>
+  <script src="../../js/sub.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <ul class="status s_none disable">
+        <li class="title">
+          내 정보
+        </li>
+      </ul>
+      <ul class="status s_arrow ">
+        <li class="arrow"><a href="record.html"></a></li>
+        <li class="title">
+          2024년 8월 28일
+        </li>
+      </ul>
+      <div class="phy_tab">
+        <ul>
+          <li>
+            <a href="#physical">신체<br>활동지원</a>
+          </li>
+          <li>
+            <a href="#communication">인지관리 및<br> 의사소통</a>
+          </li>
+          <li>
+            <a href="#nursing">건강<br>간호관리
+            </a>
+          </li>
+          <li>
+            <a href="#recovery">기능<br>회복훈련
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="phy_wrap" class="status_block">
+      <div class="inner">
+        <div class="phy_content">
+          <table id="physical">
+            <tr class="phy_first">
+              <th>구분</th>
+              <th>27일</th>
+              <th>28일</th>
+            </tr>
+            <tr>
+              <th>개인 위생관리 및
+                일상생활 도움 등</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr>
+              <th>목욕</th>
+              <th>목욕의자
+                (20분)</th>
+              <th>목욕의자
+                (20분)</th>
+            </tr>
+            <tr>
+              <th>식사(아침)</th>
+              <th>시리얼</th>
+              <th>시리얼</th>
+            </tr>
+            <tr>
+              <th>식사(점심)</th>
+              <th>일반식
+                (1)</th>
+              <th>일반식
+                (1)</th>
+            </tr>
+            <tr>
+              <th>식사(저녁)</th>
+              <th>일반식
+                (1)</th>
+              <th>일반식
+                (1)</th>
+            </tr>
+            <tr>
+              <th>화장실 이용하기
+                기저귀 교환</th>
+              <th><img src="../../img/sub/ico_close.svg" alt="ico_close.svg"></th>
+              <th><img src="../../img/sub/ico_close.svg" alt="ico_close.svg"></th>
+            </tr>
+            <tr>
+              <th>이동도움 및 신체
+                기능 유지-증진</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr class="significant">
+              <th>특이사항</th>
+              <th>보호자분과 <br>통화를 원하셔서 <br>통화를 시켜드렸음</th>
+              <th>식이변화 : <br>일반식 → <br>일반식 1/2 <br>이상 → 1 / <br>친구분과 <br>작은 다툼이 <br>있어 중재해드림</th>
+            </tr>
+            <tr>
+              <th>작성자 성명</th>
+              <th>이사회</th>
+              <th>이사회</th>
+            </tr>
+          </table>
+
+          <table id="communication">
+            <tr class="com_first">
+              <th>구분</th>
+              <th>27일</th>
+              <th>28일</th>
+            </tr>
+            <tr>
+              <th>인지관리지원</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr>
+              <th>의사소통 도움 등
+                말벗, 격려</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr class="significant">
+              <th>특이사항</th>
+              <th>활동점검/ <br>정서적 안정과 <br>생활 의욕 향상 <br>도움(말벗, 격려, <br>위로 등)</th>
+              <th>활동점검/ <br>식습관 변화에 <br>따른 영양상태 <br>관리로 건강상태 <br>유지도움 <br>(입맛변화 등)</th>
+            </tr>
+            <tr>
+              <th>작성자 성명</th>
+              <th>이사회</th>
+              <th>이사회</th>
+            </tr>
+          </table>
+
+          <table id="nursing">
+            <tr class="nur_first">
+              <th>구분</th>
+              <th>27일</th>
+              <th>28일</th>
+            </tr>
+            <tr>
+              <th>혈압
+                체온
+                혈당</th>
+              <th>130/96
+                36.8
+                100</th>
+              <th>130/80
+                37.0
+                120</th>
+            </tr>
+            <tr>
+              <th>건강관리(분)</th>
+              <th>25분</th>
+              <th>25분</th>
+            </tr>
+            <tr>
+              <th>간호관리(분)</th>
+              <th>-</th>
+              <th>10분</th>
+            </tr>
+            <tr>
+              <th>기타
+                (응급서비스)</th>
+              <th>-</th>
+              <th>10분</th>
+            </tr>
+            <tr class="significant">
+              <th>특이사항</th>
+              <th>처방약을 <br>드신 후 서서히 <br>혈압이 정상 <br>범위로 돌아옴</th>
+              <th>무릎에 약한 통증을 호소하셔서 근이완제 상비약품을 전달해드림. <br>미열과 기침 증상이 있어 마스크 착용을 권고드림.</th>
+            </tr>
+            <tr>
+              <th>작성자 성명</th>
+              <th>이사회</th>
+              <th>이사회</th>
+            </tr>
+          </table>
+
+          <table id="recovery">
+            <tr class="rec_first">
+              <th>구분</th>
+              <th>27일</th>
+              <th>28일</th>
+            </tr>
+            <tr>
+              <th>신체·인지
+                기능 향상
+                프로그램</th>
+              <th>색종이
+                (13:30-14:30)
+                파라슈트
+                (16:10-17:10)</th>
+              <th>볼링
+                (13:30-14:30)
+                실내자전거
+                (16:10-17:10)</th>
+            </tr>
+            <tr>
+              <th>신체기능·
+                기본동작,
+                일상생활
+                동작훈련</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr>
+              <th>인지활동형
+                프로그램</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr>
+              <th>인지기능
+                향상훈련</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr>
+              <th>물리(작업)
+                치료</th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+              <th><img src="../../img/sub/ico_circle.svg" alt="ico_circle"></th>
+            </tr>
+            <tr class="significant">
+              <th>특이사항</th>
+              <th>프로그램을 <br>재밌게 잘 <br>참여하심/ <br>열심히 참여하심</th>
+              <th>볼링 공을 던져 <br>맞추기 위해 <br>최선을 다하심/ <br>열심히 따라하심</th>
+            </tr>
+            <tr>
+              <th>작성자 성명</th>
+              <th>이사회</th>
+              <th>이사회</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="navigation">
+        <ul class="app_nav">
+          <li>
+            <a href="../main/main.html">
+              <img src="../../img/common/ico_widgets.svg" alt="메뉴">
+              <p>
+                메뉴
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="../notice/notice.html">
+              <img src="../../img/common/ico_newsmode.svg" alt="소식">
+              <p>
+                소식
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="../alram/alarm.html">
+              <img src="../../img/common/ico_notification.svg" alt="알림">
+              <p>
+                알림
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="../mypage/mypage.html">
+
+              <img src="../../img/common/ico_mypage.svg" alt="내 정보">
+              <p>
+                내 정보
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+</body>
+
+</html>

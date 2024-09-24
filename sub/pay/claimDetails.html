@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스케어 알림장</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="../../img/common/favicon.svg">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/date.js"></script>
+  <script src="../../js/sub.js"></script>
+</head>
+
+<body class="bg_f1">
+  <div id="wrap">
+    <header id="header">
+      <ul class="status s_none disable">
+        <li class="title">
+          내 정보
+        </li>
+      </ul>
+      <ul class="status s_arrow ">
+        <li class="arrow"><a href="../main/main.html"></a></li>
+        <li class="title">
+          청구내역
+        </li>
+      </ul>
+    </header>
+    <main id="cla_wrap" class="status_block tab_fixed">
+      <div class="cla_tab">
+        <ul>
+          <li>
+            <a href="claimDetails.html">청구내역</a>
+          </li>
+          <li>
+            <a href="depositDetails.html">입금내역</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inner tab_fixed">
+        <div class="cla_box">
+          <ul class="cla_txtbox">
+            <li>
+              <h3>2024년 03월 청구요금</h3>
+              <p>2024.03.01 ~ 2024.03.31</p>
+            </li>
+            <li>
+              <b>29,880<span class="cla_price">원</span></b>
+              <img src="../../img/common/ico_down.svg" alt="ico_down" class="cla_down">
+            </li>
+            <li>
+              <ul class="cla_depth2">
+                <li>
+                  <hr>
+                </li>
+                <li><span>급여</span>
+                  <p>0원</p>
+                </li>
+                <li><span>본인부담금</span>
+                  <p>0원</p>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><span>비급여항목합계</span>
+                  <p>0원</p>
+                </li>
+                <li><span>이전 미납금</span>
+                  <p>29,880원</p>
+                </li>
+                <li><span>선납금액</span>
+                  <p>0원</p>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><span>총 청구금액</span>
+                  <p><b>29,880</b>원</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="cla_txtbox">
+            <li>
+              <h3>2024년 02월 청구요금</h3>
+              <p>2024.02.01 ~ 2024.02.31</p>
+            </li>
+            <li>
+              <b>42,095<span class="cla_price">원</span></b>
+              <img src="../../img/common/ico_down.svg" alt="ico_down" class="cla_down">
+            </li>
+            <li>
+              <ul class="cla_depth2">
+                <li>
+                  <hr>
+                </li>
+                <li><span>급여</span>
+                  <p>0원</p>
+                </li>
+                <li><span>본인부담금</span>
+                  <p>0원</p>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><span>비급여항목합계</span>
+                  <p>0원</p>
+                </li>
+                <li><span>이전 미납금</span>
+                  <p>42,095원</p>
+                </li>
+                <li><span>선납금액</span>
+                  <p>0원</p>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><span>총 청구금액</span>
+                  <p><b>42,095</b>원</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="cla_txtbox">
+            <li>
+              <h3>2024년 01월 청구요금</h3>
+              <p>2024.01.01 ~ 2024.01.31</p>
+            </li>
+            <li>
+              <b>98,410<span class="cla_price">원</span></b>
+              <img src="../../img/common/ico_down.svg" alt="ico_down" class="cla_down">
+            </li>
+            <li>
+              <ul class="cla_depth2">
+                <li>
+                  <hr>
+                </li>
+                <li><span>급여</span>
+                  <p>0원</p>
+                </li>
+                <li><span>본인부담금</span>
+                  <p>0원</p>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><span>비급여항목합계</span>
+                  <p>0원</p>
+                </li>
+                <li><span>이전 미납금</span>
+                  <p>98,410원</p>
+                </li>
+                <li><span>선납금액</span>
+                  <p>0원</p>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><span>총 청구금액</span>
+                  <p><b>98,410</b>원</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <div id="navigation">
+      <ul class="app_nav">
+        <li>
+          <a href="../main/main.html">
+            <img src="../../img/common/ico_widgets.svg" alt="메뉴">
+            <p>
+              메뉴
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../notice/notice.html">
+            <img src="../../img/common/ico_newsmode.svg" alt="소식">
+            <p>
+              소식
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../alram/alarm.html">
+            <img src="../../img/common/ico_notification.svg" alt="알림">
+            <p>
+              알림
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="../mypage/mypage.html">
+
+            <img src="../../img/common/ico_mypage.svg" alt="내 정보">
+            <p>
+              내 정보
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
